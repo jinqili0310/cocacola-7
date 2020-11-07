@@ -28,11 +28,11 @@ function createQuestions() {
 	prescripted_questions[2] = new Question(["Our company was founded in 1892. Let me count... Hmm... That's 128 years ago 🤩"], 'Where is the company located?', 3)
 	prescripted_questions[3] = new Question(["Our company is headquartered in Atlanta, Georgia 🇺🇸 But I believe we now operate worldwide 🌎"], "How many countries carry your products?", 4);
 	prescripted_questions[4] = new Question(["You can find us in more than 200 countries 🥳"], "Other than regular coke, what do you sell?", 5);
-	prescripted_questions[5] = new Question([ " I can't understand your question. Can you type your question again, but in a simpler form? 🥺", "https://kikijinqili.github.io/assets/cocacola/img/200.gif"], "What products do you have?", 6);
+	prescripted_questions[5] = new Question([ "🤭 I can't understand your question. Can you type your question again, but in a simpler form? 🥺", "https://kikijinqili.github.io/assets/cocacola/img/200.gif"], "What products do you have?", 6);
 	prescripted_questions[6] = new Question(["Coke and Sprite are our star products🥤But we also own many other products including Fanta, Minute Maid, and Costa Coffee 🥳"],"How many different products do you sell?", 7);
 	prescripted_questions[7] = new Question(["Well... It's definitely more than what you expected 😂 We sell 4300+ different products."], "Which product would you recommend if I am feeling sad?", 8);
 	prescripted_questions[8] = new Question(["Sorry to hear that you are feeling blue. I hope something wonderful would happen to you soon! Remember, bad things will pass ❤️ For a sad day, I recommend our Minute Maid orange juice 🍊. It's bright yellow like sunshine 🌞 and full of vitamin C to perk up your day!", "https://kikijinqili.github.io/assets/cocacola/img/201.gif"], "Any drinks that provide mental and physical stimulation?", 9);
-	prescripted_questions[9] = new Question([" I can't understand your question. Can you type your question again, but in a simpler form? 🥺", "https://kikijinqili.github.io/assets/cocacola/img/200.gif"], "Can you recommend an energy drink?", 10);
+	prescripted_questions[9] = new Question(["🤭 I can't understand your question. Can you type your question again, but in a simpler form? 🥺", "https://kikijinqili.github.io/assets/cocacola/img/200.gif"], "Can you recommend an energy drink?", 10);
 	prescripted_questions[10] = new Question(["We recently launched Coca-Cola Energy 💪🏽 featuring both regular and zero-sugar version. Try it next time you go grocery shopping 🛒"], "Tell me a fun fact about the company.", 11);
 	prescripted_questions[11] = new Question(["We used to own the movie studio Columbia Pictures 🤯 which produced many popular films including Ghostbuster 👻!!!"], "That is cool!", 12);
 	prescripted_questions[12] = new Question(["I know! Right? Coca-Cola is full of surprises 😜"], "Thank you for your help!", -1);
@@ -46,7 +46,7 @@ function askNextQuestion(answer_text) {
 	var next_question = prescripted_questions[cur_question_index].next_questions; //one number as index
 	
 	// check answer to select the next question
-	var pretext = "Oops 🤭 Sorry " + user_name + ",";
+	var pretext = "";
 
 	var answer_words = answer.toLowerCase().split(' ');
 	var valid_word_num = 0;
