@@ -1,7 +1,7 @@
 {
 	"name": "cocacola-clone",
 	"version": "0.1.0",
-	"homepage": "https://kikijinqili.github.io/cocacola-7",
+	"homepage": "https://jinqili0310.github.io/cocacola-7",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.29",
